@@ -20,6 +20,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     PRRequest *request = [[PRRequest alloc] init];
+    request.delegate=self;
     [request startSomething];
 }
 
