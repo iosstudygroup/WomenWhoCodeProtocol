@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PRRequest.h"
 
-@interface PRViewController : UIViewController <UITextFieldDelegate>
+@interface PRViewController : UIViewController <UITextFieldDelegate, PRRequestDelegate>
 
 @end

@@ -25,7 +25,6 @@
 
 -(void)stopSomething {
  // hey self.delegate do you have this method?
-    
     if([self.delegate respondsToSelector:@selector(requestFinished:)]) {
         [self.delegate requestFinished:self];
     }

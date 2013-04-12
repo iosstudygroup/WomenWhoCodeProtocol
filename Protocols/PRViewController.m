@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    PRRequest *request = [[PRRequest alloc] init];
+    [request startSomething];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +44,16 @@
     return YES;
 }
 
+-(void)requestStarted
+{
+    NSLog(@"Request started at %@", [NSDate date]);
+    
+    
+}
+
+-(void)requestFinished:(PRRequest *)request {
+    NSLog(@"Request %p finished at %@", request, [NSDate date]);
+}
 
 
 @end
